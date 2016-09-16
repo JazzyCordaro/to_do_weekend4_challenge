@@ -66,7 +66,7 @@ app.post( '/addTask', urlencodedParser, function( req, res ){
       return;
     } // end error connect
       // query to db
-      client.query( "INSERT INTO to_do(task) values($1, $2)", [data.task, data.complete]);
+      client.query( "INSERT INTO to_do(task, complete) values($1, $2)", [data.task, data.complete]);
       var query = client.query('SELECT * FROM  to_do ORDER BY id DESC LIMIT 1');
       query.on('row', function( row ){
         results.push(row);

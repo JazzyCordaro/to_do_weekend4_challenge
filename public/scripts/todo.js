@@ -25,6 +25,7 @@ $( document ).ready( function(){
 
     var objectToSend = {
       task: $('#taskName').val(),
+      complete: $('#complete')
     };
   });
 // });
@@ -48,7 +49,7 @@ var getTask = function(){
 var appendTasks = function(){
   console.log('in appendTasks');
   for (var i = 0; i < task.length; i++) {
-    $( '#outputDiv' ).append('<p>' + ' ' + task[i].task +  '</p>');
+    $( '#outputDiv' ).append('<li>' + ' ' + task[i].task +  '</li>');
   }
 };
 

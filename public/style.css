@@ -17,4 +17,5 @@ h1{
 padding: 20px 0 20px 20px;
 font-size: 23px;
 border-top: solid 3px black;
+/*text-decoration: line-through;*/
 }

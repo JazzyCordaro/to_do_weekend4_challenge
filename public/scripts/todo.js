@@ -49,7 +49,7 @@ var getTask = function(){
 var appendTasks = function(){
   console.log('in appendTasks');
   for (var i = 0; i < task.length; i++) {
-    $( '#outputDiv' ).append('<li>' + ' ' + task[i].task +  '</li>');
+    $( '#outputDiv' ).append('<ul>' + '<input type="checkbox">' + ' ' + task[i].task +  '</input>' + '</ul>');
   }
 };
 
@@ -68,6 +68,7 @@ var saveTask = function( newTask ){
     } // end success
   }); //end ajax
 };
+
 
 // var changeTask = function( diffTask ){
 //   console.log('in changeTask', diffTask);

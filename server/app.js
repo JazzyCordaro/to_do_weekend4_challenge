@@ -96,3 +96,15 @@ app.post( '/addTask', urlencodedParser, function( req, res ){
 //   //send info back to client
 //   res.send( objectToSend );
 // });
+
+
+// add task
+app.post( '/deleteTask', urlencodedParser, function( req, res ){
+  console.log( 'deleteTask route hit' );
+  //assemble object to send
+  var objectToSend={
+    response: 'from deleteTask route'
+  }; //end objectToSend
+  //send info back to client
+  res.send( objectToSend );
+});

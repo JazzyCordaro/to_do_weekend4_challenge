@@ -77,6 +77,24 @@ app.post( '/addTask', urlencodedParser, function( req, res ){
         return res.json(results);
       });
 
+
+
+
+//
+// client.query("DELETE FROM to_do(task, complete) values($1, $2)", [data.task, data.complete]);
+// query = client.query('DELETE * FROM to_do');
+// query.on('row', function(row){
+//     results.push(row);
+// });
+
+
+
+
+
+
+
+
+
   });
   //assemble object to send
   // var objectToSend={

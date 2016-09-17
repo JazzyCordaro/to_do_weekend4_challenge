@@ -25,7 +25,7 @@ $( document ).ready( function(){
 
     var objectToSend = {
       task: $('#taskName').val(),
-      complete: $('#complete')
+      complete: $('#complete').val()
     };
   });
 // });
@@ -65,6 +65,21 @@ var saveTask = function( newTask ){
       console.log( 'got some Tasks: ', data );
       task = data;
       appendTasks();
+    } // end success
+  }); //end ajax
+};
+
+var deleteTask = function( newTask ){
+  console.log( 'in deleteTask', deleteTask );
+  // ajax call to server to get tasks
+  $.ajax({
+    url: '/deleteTask',
+    type: 'post',
+    data: deleteTask,
+    success: function( data ){
+      console.log( 'delete some Tasks: ', data );
+      task = data;
+      // appendTasks();
     } // end success
   }); //end ajax
 };

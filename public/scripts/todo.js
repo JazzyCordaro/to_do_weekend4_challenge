@@ -69,6 +69,10 @@ var saveTask = function( newTask ){
   }); //end ajax
 };
 
+
+
+
+
 var deleteTask = function( newTask ){
   console.log( 'in deleteTask', deleteTask );
   // ajax call to server to get tasks
@@ -83,16 +87,3 @@ var deleteTask = function( newTask ){
     } // end success
   }); //end ajax
 };
-
-
-// var changeTask = function( diffTask ){
-//   console.log('in changeTask', diffTask);
-//   $.ajax({
-//     url: '/editTask',
-//     type: 'POST',
-//     data: diffTask,
-//     success: function( data ){
-//
-//     } // end success
-//   }); // end ajax
-// };

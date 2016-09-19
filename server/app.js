@@ -80,6 +80,13 @@ app.post( '/addTask', urlencodedParser, function( req, res ){
 
 
 
+
+
+
+
+
+
+
 //
 // client.query("DELETE FROM to_do(task, complete) values($1, $2)", [data.task, data.complete]);
 // query = client.query('DELETE * FROM to_do');
@@ -117,12 +124,12 @@ app.post( '/addTask', urlencodedParser, function( req, res ){
 
 
 // add task
-app.post( '/deleteTask', urlencodedParser, function( req, res ){
-  console.log( 'deleteTask route hit' );
-  //assemble object to send
-  var objectToSend={
-    response: 'from deleteTask route'
-  }; //end objectToSend
-  //send info back to client
-  res.send( objectToSend );
-});
+// app.post( '/deleteTask', urlencodedParser, function( req, res ){
+//   console.log( 'deleteTask route hit' );
+//   //assemble object to send
+//   var objectToSend={
+//     response: 'from deleteTask route'
+//   }; //end objectToSend
+//   //send info back to client
+//   res.send( objectToSend );
+// });
